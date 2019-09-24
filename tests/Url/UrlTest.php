@@ -35,4 +35,14 @@ class UrlTest extends TestCase
 
         $this->assertEquals('http://user:passwd@test.com/foo/bar/index.php?x=1&y=hello#iAmTheFragment', $url->toString());
     }
+
+    public function testSetPass()
+    {
+        $urlStr = 'http://user:passwd@example.com/foo/bar/index.php?x=1&y=hello#iAmTheFragment';
+
+        $url = new Url($urlStr);
+        $url->setPass('passfoo');
+
+        $this->assertEquals('http://user:passfoo@example.com/foo/bar/index.php?x=1&y=hello#iAmTheFragment', $url->toString());
+    }
 }
