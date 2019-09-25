@@ -5,3 +5,4 @@ vendor
 .tmp
 coverage.xml
 clover.xml
+composer.lock
