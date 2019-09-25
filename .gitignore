@@ -3,3 +3,4 @@
 coverage
 vendor
 .tmp
+coverage.xml
