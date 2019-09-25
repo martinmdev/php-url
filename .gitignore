@@ -4,3 +4,4 @@ coverage
 vendor
 .tmp
 coverage.xml
+clover.xml
