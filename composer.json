@@ -10,7 +10,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Martinm\\Url\\": "src/"
+            "Martinm\\": "src/"
         }
     },
     "autoload-dev": {
