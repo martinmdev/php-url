@@ -291,4 +291,19 @@ class UrlTest extends TestCase
 
         $this->assertEquals('http://example.com/my/files/index.html', $url->toString());
     }
+
+    public function testGetDomainFromUrl2()
+    {
+        $this->assertEquals('example.com', Url::getDomainFromUrl('example.com/123'));
+    }
+
+    public function testAssembleEmptyPath()
+    {
+        $urlStr = 'http://example.com';
+
+        $url = new Url($urlStr);
+        $url->setScheme('https');
+
+        $this->assertEquals('https://example.com/', $url->toString());
+    }
 }
