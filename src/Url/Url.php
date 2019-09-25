@@ -370,7 +370,7 @@ class Url implements \JsonSerializable
      *
      * @return string
      */
-    public function buildQuery($params)
+    public static function buildQuery($params)
     {
         return http_build_query($params);
     }
